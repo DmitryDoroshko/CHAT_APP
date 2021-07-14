@@ -133,8 +133,52 @@ body {
 }
 
 .chat {
-  margin: 20px 0 0 0;
+  margin: 5px 0 0 0;
   width: calc(900 * 0.73px);
   height: 70vh;
   border: 1px solid black;
+}
+
+.chat__tabs {
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+}
+
+.chat__tab-links {
+  background-color: inherit;
+  width: auto;
+  max-width: 210px;
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 5px 7px;
+  transition: 0.3s;
+}
+
+.chat__close {
+  border: none;
+  cursor: pointer;
+}
+
+.chat__close:hover {
+  color:rgb(223, 131, 25);
+}
+
+.chat__tabs chat__tab-links:hover {
+  background-color: #ddd;
+}
+
+.chat__tabs chat__tab-links.active {
+  background-color: rgb(162, 198, 221);
+}
+
+.chat__tab_content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.chat__tab_content.visible {
+  display: block;
 }
