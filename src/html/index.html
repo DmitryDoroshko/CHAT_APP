@@ -1,15 +1,50 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
+    <meta charset="UTF-8">
+    <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/styles.css">
-  <script src="../js/main.js" defer></script>
-  <title>Chat App</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+    <title>Chat App</title>
 </head>
+
 <body>
-<div id="app"></div>
+    <div id="app">
+        <div class="container">
+            <div class="header">
+                <div class="header__row">
+                    <div class="header__column">
+                        <p class="header__online">You're online for:
+                            <span class="header__online-placeholder">1h 30m</span>
+                        </p>
+                        <p class="header__local-time">Your local time is:
+                            <span class="header__local-time_placeholder">10:45</span>
+                        </p>
+                        <br>
+                        <div class="header__edit-personal-info">
+                            <a href="#">Edit personal info</a>
+                        </div>
+                        <div class="header__private-messages">
+                            <a href="#">Private messages <span class="header__private-messages_count">(3)</span></a>
+                        </div>
+                    </div>
+                    <div class="header__column">
+                        <div class="header__chat-name">
+                            <a href="https://t.me/nosanctuary" target="_blank">
+                                demetra chat
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
 </body>
+
 </html>
