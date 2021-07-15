@@ -1,15 +1,126 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
+    <meta charset="UTF-8">
+    <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/styles.css">
-  <script src="../js/main.js" defer></script>
-  <title>Chat App</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+    <title>Chat App</title>
 </head>
+
 <body>
-<div id="app"></div>
+    <div id="app">
+        <div class="container">
+            <div class="header">
+                <div class="header__row">
+                    <div class="header__column">
+                        <p class="header__online">You're online for:
+                            <span class="header__online-placeholder">1h 30m</span>
+                        </p>
+                        <p class="header__local-time">Your local time is:
+                            <span class="header__local-time_placeholder">10:45</span>
+                        </p>
+                        <br>
+                        <div class="header__edit-personal-info">
+                            <a href="#">Edit personal info</a>
+                        </div>
+                        <div class="header__private-messages">
+                            <a href="#">Private messages <span class="header__private-messages_count">(3)</span></a>
+                        </div>
+                    </div>
+                    <div class="header__column">
+                        <div class="header__chat-name">
+                            <a href="https://t.me/nosanctuary" target="_blank">
+                                demetra chat
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="header-logout-btn" id="header-logout-btn">Log Out</button>
+                <br>
+            </div>
+            <div class="main-content">
+                <div class="online">
+                    <div class="online__counter">Online: 
+                        <span class="online__counter_placeholder">4</span>
+                    </div>
+                    <div class="online__wrapper">
+                        <a href="#" class="online__person">John Snow</a>
+                        <a href="#" class="online__person">Andrew Simpson</a>
+                        <a href="#" class="online__person">Alison Black</a>
+                        <a href="#" class="online__person active">Sasha Stuart</a>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat__tabs">
+                        <div class="chat__tab-links">Main Chat <button class="chat__close">[X]</button></div>
+                        <div class="chat__tab-links">Chat With Alison (2) <button class="chat__close">[X]</button></div>
+                    </div>
+                    <div class="chat__content">
+                        <div class="chat__tab_content visible">
+                            <div class="chat__message">
+                                <span class="chat__message_name">John Snow:</span>
+                                <span class="chat__message_text">Hi! How is the weather there?</span>
+                            </div>
+                            <div class="chat__message">
+                                <span class="chat__message_name">Alison Black:</span>
+                                <span class="chat__message_text">It's snowy, temperature here is 10 degrees below zero celsius.</span>
+                            </div>
+                            <div class="chat__message">
+                                <span class="chat__message_name">John Snow:</span>
+                                <span class="chat__message_text">Wuh, it seems winter has come indeed!</span>
+                            </div>
+                        </div>
+                        <div class="chat__tab_content">
+                            <div class="chat__message">
+                                <span class="chat__message_name">John Snow</span>
+                                <span class="chat__message_text">Hi! How is the weather there?</span>
+                            </div>
+                            <div class="chat__message">
+                                <span class="chat__message_name">Alison Black</span>
+                                <span class="chat__message_text">It's snowy, temperature here is 10 degrees below zero celsius.</span>
+                            </div>
+                            <div class="chat__message">
+                                <span class="chat__message_name">John Snow</span>
+                                <span class="chat__message_text">Wuh, it seems winter has come indeed!</span>
+                            </div>
+                        </div>
+                        <div class="chat__tab_content">
+                            <div class="chat__message">
+                                <span class="chat__message_name">John Snow</span>
+                                <span class="chat__message_text">Hi! How is the weather there?</span>
+                            </div>
+                            <div class="chat__message">
+                                <span class="chat__message_name">Alison Black</span>
+                                <span class="chat__message_text">It's snowy, temperature here is 10 degrees below zero celsius.</span>
+                            </div>
+                            <div class="chat__message">
+                                <span class="chat__message_name">John Snow</span>
+                                <span class="chat__message_text">Wuh, it seems winter has come indeed!</span>
+                            </div>
+                        </div>
+                        <div class="chat__tab_content">
+                            <div class="chat__message">
+                                <span class="chat__message_name">John Snow</span>
+                                <span class="chat__message_text">Hi! How is the weather there?</span>
+                            </div>
+                            <div class="chat__message">
+                                <span class="chat__message_name">Alison Black</span>
+                                <span class="chat__message_text">It's snowy, temperature here is 10 degrees below zero celsius.</span>
+                            </div>
+                            <div class="chat__message">
+                                <span class="chat__message_name">John Snow</span>
+                                <span class="chat__message_text">Wuh, it seems winter has come indeed!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
