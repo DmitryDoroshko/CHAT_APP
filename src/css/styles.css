@@ -137,6 +137,8 @@ body {
   width: calc(900 * 0.73px);
   height: 70vh;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat__tabs {
@@ -181,4 +183,65 @@ body {
 
 .chat__tab_content.visible {
   display: block;
+}
+
+.chat__message_name {
+  text-decoration: underline;
+}
+
+.message {
+  margin-top: auto;
+  text-align: center;
+}
+
+.message textarea[name="message-textarea"]{
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  padding: 7px 15px;
+}
+
+.message__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.message__info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 0 0 15px;
+}
+
+.message__buttons {
+  display: flex;
+  flex: 1 0 50%;
+  justify-content: space-between;
+}
+
+.message__miscellaneous {
+  margin: 10px 0 0 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.message__miscellaneous button{
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.message__send-message-button {
+  align-self: flex-start;
+  margin: 5px 20px 0 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.5s linear;
+  padding: 10px 20px;
+}
+
+.message__send-message-button:hover {
+  background-color: goldenrod;
+  color: white;
 }
