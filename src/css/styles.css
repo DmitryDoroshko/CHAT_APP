@@ -22,6 +22,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -244,4 +248,88 @@ body {
 .message__send-message-button:hover {
   background-color: goldenrod;
   color: white;
+}
+
+/* Register, Login*/
+.register-box, .login-box{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e;
+  color: white;
+}
+
+.box{
+  border-radius: 20px;
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+}
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+
+.login-not-registered, .register__already-registered {
+  margin: 50px auto 0 auto;
+  color: inherit;
+  font-family: inherit;
+}
+
+.login-not-registered button, .register__already-registered button {
+  background: none;
+  display: block;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  border: 2px solid #2e56cc;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.login-not-registered button:hover, .register__already-registered button:hover {
+  color: white;
+  background-color: #2e56cc;
 }

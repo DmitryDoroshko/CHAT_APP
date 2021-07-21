@@ -13,7 +13,32 @@
 
 <body>
     <div id="app">
-        <div class="container">
+        <div class="box register-box">
+            <form action="https://studentschat.herokuapp.com/users/register" method="post">
+                <h1>Register</h1>
+                <input type="text" id="register-username" name="user-name" placeholder="Please enter your username...">
+                <input type="password" id="register-password" name="user-password" placeholder="Please enter your password...">
+                <input type="submit" id="register-submit-btn">
+
+                <div class="register__already-registered">
+                    Already registered? Please log in.
+                    <button id="go-to-login-page">Go to login page</button>
+                </div>
+            </form>
+        </div>
+        <div class="box login-box hidden">
+            <form action="https://studentschat.herokuapp.com/users/login" method="post">
+                <h1>Login</h1>
+                <input type="text" id="login-username" name="user-login" placeholder="Please enter your username...">
+                <input type="password" id="login-user-password" name="user-password" placeholder="Please enter your password...">
+                <input type="submit" id="login-user-submit-btn">
+                <div class="login-not-registered">
+                    Not registered? Let's register.
+                    <button id="go-to-register-page">Go to register page</button>
+                </div>
+            </form>
+        </div>
+        <div class="container hidden">
             <div class="header">
                 <div class="header__row">
                     <div class="header__column">
