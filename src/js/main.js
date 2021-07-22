@@ -25,8 +25,12 @@ goToLogin.addEventListener("click", switchToLoginPage);
 
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
-    if (localStorage.getItem("logged-in")) {
+    console.log(localStorage.getItem("logged-in"));
+    if (localStorage.getItem("logged-in") === "true") {
         switchToMessages(event);
+    } else {
+        switchToLoginPage(event);
+        setLoggedInLocalStorage(false);
     }
 });
 
