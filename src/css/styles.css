@@ -122,18 +122,18 @@ body {
 }
 
 .online__person {
-  color: white;
+  color: black;
 }
 
 .online__wrapper > a {
   text-decoration: none;
-  color: black;
+  color: red;
   cursor: pointer;
   display: block;
 }
 
 .online__person.active {
-  color: rgb(223, 131, 25);
+  color: rgb(55, 223, 25);
 }
 
 .chat {
